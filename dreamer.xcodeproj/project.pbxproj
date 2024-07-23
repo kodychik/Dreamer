@@ -11,6 +11,9 @@
 		B78BCC652C4E2D7D00E1CFDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78BCC642C4E2D7D00E1CFDA /* ContentView.swift */; };
 		B78BCC672C4E2D7E00E1CFDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B78BCC662C4E2D7E00E1CFDA /* Assets.xcassets */; };
 		B78BCC6A2C4E2D7E00E1CFDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B78BCC692C4E2D7E00E1CFDA /* Preview Assets.xcassets */; };
+		B78BCC8D2C4F921400E1CFDA /* ChatCompletionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78BCC8C2C4F921400E1CFDA /* ChatCompletionRequest.swift */; };
+		B78BCC8F2C4F924000E1CFDA /* ChatCompletionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78BCC8E2C4F924000E1CFDA /* ChatCompletionResponse.swift */; };
+		B78BCC912C4F925B00E1CFDA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78BCC902C4F925B00E1CFDA /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		B78BCC642C4E2D7D00E1CFDA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B78BCC662C4E2D7E00E1CFDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B78BCC692C4E2D7E00E1CFDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B78BCC8C2C4F921400E1CFDA /* ChatCompletionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCompletionRequest.swift; sourceTree = "<group>"; };
+		B78BCC8E2C4F924000E1CFDA /* ChatCompletionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCompletionResponse.swift; sourceTree = "<group>"; };
+		B78BCC902C4F925B00E1CFDA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,9 @@
 		B78BCC612C4E2D7D00E1CFDA /* dreamer */ = {
 			isa = PBXGroup;
 			children = (
+				B78BCC902C4F925B00E1CFDA /* NetworkManager.swift */,
+				B78BCC8E2C4F924000E1CFDA /* ChatCompletionResponse.swift */,
+				B78BCC8C2C4F921400E1CFDA /* ChatCompletionRequest.swift */,
 				B78BCC622C4E2D7D00E1CFDA /* dreamerApp.swift */,
 				B78BCC642C4E2D7D00E1CFDA /* ContentView.swift */,
 				B78BCC662C4E2D7E00E1CFDA /* Assets.xcassets */,
@@ -137,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B78BCC912C4F925B00E1CFDA /* NetworkManager.swift in Sources */,
+				B78BCC8F2C4F924000E1CFDA /* ChatCompletionResponse.swift in Sources */,
 				B78BCC652C4E2D7D00E1CFDA /* ContentView.swift in Sources */,
+				B78BCC8D2C4F921400E1CFDA /* ChatCompletionRequest.swift in Sources */,
 				B78BCC632C4E2D7D00E1CFDA /* dreamerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
