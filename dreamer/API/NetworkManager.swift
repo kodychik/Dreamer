@@ -20,7 +20,7 @@ class NetworkManager {
             messages: messages,
             temperature: 0.7,
             top_p: 1,
-            max_tokens: 512,
+            max_tokens: 200,
             stream: false,
             safe_prompt: false,
             random_seed: 1337
