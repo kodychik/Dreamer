@@ -20,6 +20,13 @@ class DreamListModel: ObservableObject {
 
     var db = Firestore.firestore()
     
+    private func formatDate(date: Date) -> String {
+            let formatter = DateFormatter()
+            formatter.dateStyle = .medium
+            formatter.timeStyle = .none
+            return formatter.string(from: date)
+    }
+    
     func get_dreams() {
         guard let userID = userID else {
             print("Error: User is not logged in.")
@@ -41,6 +48,10 @@ class DreamListModel: ObservableObject {
                 let data = queryDocumentSnapshot.data()
                 let title = String(queryDocumentSnapshot.documentID)
                 let date = data["date"] as? String ?? ""
+
+                //print(data["date"] ?? "shush")
+                print("@@@@@@@@@@@@@@")
+                print(date)
                 let dream = data["dream"] as? String ?? ""
                 let analysis = data["analysis"] as? String ?? ""
                 return Dreamville(title: title, date: date, dream: dream, analysis: analysis)

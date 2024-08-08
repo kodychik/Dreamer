@@ -15,9 +15,17 @@ struct DreamList: View {
     
     var body: some View {
         
-        NavigationView {
-            the_list
+        ZStack {
+            Color.indigo.ignoresSafeArea()
+            VStack {
+                headerView
+                the_list
+            }
+            
         }
+        
+            
+        
         
         
     }
@@ -45,17 +53,15 @@ struct DreamList: View {
                 Text(dream.date).font(.subheadline)
             }
         }
-        .navigationTitle("Dreams")
         .onAppear() {
             listView.get_dreams()
         }
     }
     
-    private func formatDate(date: Date) -> String {
-            let formatter = DateFormatter()
-            formatter.dateStyle = .medium
-            formatter.timeStyle = .none
-            return formatter.string(from: date)
-    }
+    
 
+}
+
+#Preview {
+    DreamList()
 }

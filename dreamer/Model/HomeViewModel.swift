@@ -24,6 +24,7 @@ class HomeViewModel: ObservableObject {
                 case .success(let response):
                     self?.apiResponse = response.choices.first?.message.content ?? "No response"
                 case .failure(let error):
+                    print("&&&&&&&&&&&&&&&&&&")
                     self?.apiResponse = "Error: \(error.localizedDescription)"
                 }
             }

@@ -1,7 +1,7 @@
 import Foundation
 
 class NetworkManager {
-    private let apiKey = "DBEuWgFyyGZujayo820nj9gJd3aphANf"
+    private let apiKey = ""
     private let apiURL = "https://api.mistral.ai/v1/chat/completions"
 
     func fetchChatCompletion(for messages: [[String: String]], completion: @escaping (Result<ChatCompletionResponse, Error>) -> Void) {
@@ -40,12 +40,23 @@ class NetworkManager {
                 completion(.failure(NetworkError.noData))
                 return
             }
+            print(data)
 
             do {
+//                print("((((((((((((((")
+//                let responseObject = try JSONDecoder().decode(ChatCompletionResponse.self, from: data)
+//                completion(.success(responseObject))
+//                print("((((((((((((((")
+                if let jsonString = String(data: data, encoding: .utf8) {
+                    print("Received JSON response: \(jsonString)")
+                }
                 let responseObject = try JSONDecoder().decode(ChatCompletionResponse.self, from: data)
                 completion(.success(responseObject))
             } catch {
+                print("%%%%%%%%%%%%%%%%%%")
                 completion(.failure(error))
+                print(error)
+                
             }
         }
         print("**************")
