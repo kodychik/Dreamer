@@ -5,7 +5,20 @@ struct ContentView: View {
 
     var body: some View {
         if isAuthenticated {
-            HomeView()
+            //HomeView()
+            TabView {
+                HomeView().tabItem() {
+                    Image(systemName: "house")
+                    Text("Home")
+                        .foregroundColor(.white)
+                }
+                DreamList().tabItem() {
+                    Image(systemName: "book")
+                    Text("Home")
+                        .foregroundColor(.white)
+                }
+            }
+            
         } else {
             AuthView(isAuthenticated: $isAuthenticated)
         }

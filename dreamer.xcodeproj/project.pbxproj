@@ -33,6 +33,10 @@
 		B796FDC62C568801006FB570 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = B796FDC52C568801006FB570 /* FirebaseFirestoreCombine-Community */; };
 		B796FDC82C568801006FB570 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B796FDC72C568801006FB570 /* FirebaseFirestoreSwift */; };
 		B796FDCA2C577D48006FB570 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796FDC92C577D48006FB570 /* HomeView.swift */; };
+		B796FDCC2C6364CC006FB570 /* DreamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796FDCB2C6364CC006FB570 /* DreamListView.swift */; };
+		B796FDCE2C636A3A006FB570 /* DreamListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796FDCD2C636A3A006FB570 /* DreamListModel.swift */; };
+		B796FDD02C638B9C006FB570 /* DreamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796FDCF2C638B9C006FB570 /* DreamDetailView.swift */; };
+		B796FDD22C6397A1006FB570 /* Dreamville.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796FDD12C6397A1006FB570 /* Dreamville.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +53,10 @@
 		B796FDBC2C524842006FB570 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		B796FDC02C524A90006FB570 /* DreamRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamRepo.swift; sourceTree = "<group>"; };
 		B796FDC92C577D48006FB570 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B796FDCB2C6364CC006FB570 /* DreamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamListView.swift; sourceTree = "<group>"; };
+		B796FDCD2C636A3A006FB570 /* DreamListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamListModel.swift; sourceTree = "<group>"; };
+		B796FDCF2C638B9C006FB570 /* DreamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamDetailView.swift; sourceTree = "<group>"; };
+		B796FDD12C6397A1006FB570 /* Dreamville.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dreamville.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,8 @@
 				B78BCC642C4E2D7D00E1CFDA /* ContentView.swift */,
 				B796FDB92C524722006FB570 /* AuthView.swift */,
 				B796FDC92C577D48006FB570 /* HomeView.swift */,
+				B796FDCB2C6364CC006FB570 /* DreamListView.swift */,
+				B796FDCF2C638B9C006FB570 /* DreamDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -130,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				B796FDBC2C524842006FB570 /* HomeViewModel.swift */,
+				B796FDCD2C636A3A006FB570 /* DreamListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				B796FDC02C524A90006FB570 /* DreamRepo.swift */,
+				B796FDD12C6397A1006FB570 /* Dreamville.swift */,
 			);
 			path = FireStoring;
 			sourceTree = "<group>";
@@ -253,9 +265,13 @@
 				B796FDC12C524A90006FB570 /* DreamRepo.swift in Sources */,
 				B78BCC912C4F925B00E1CFDA /* NetworkManager.swift in Sources */,
 				B78BCC8F2C4F924000E1CFDA /* ChatCompletionResponse.swift in Sources */,
+				B796FDCE2C636A3A006FB570 /* DreamListModel.swift in Sources */,
 				B796FDBD2C524842006FB570 /* HomeViewModel.swift in Sources */,
 				B78BCC652C4E2D7D00E1CFDA /* ContentView.swift in Sources */,
+				B796FDD02C638B9C006FB570 /* DreamDetailView.swift in Sources */,
 				B796FDCA2C577D48006FB570 /* HomeView.swift in Sources */,
+				B796FDCC2C6364CC006FB570 /* DreamListView.swift in Sources */,
+				B796FDD22C6397A1006FB570 /* Dreamville.swift in Sources */,
 				B78BCC8D2C4F921400E1CFDA /* ChatCompletionRequest.swift in Sources */,
 				B78BCC632C4E2D7D00E1CFDA /* dreamerApp.swift in Sources */,
 			);

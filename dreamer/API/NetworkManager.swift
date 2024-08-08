@@ -1,7 +1,7 @@
 import Foundation
 
 class NetworkManager {
-    private let apiKey = "" // Replace with your actual API key
+    private let apiKey = "DBEuWgFyyGZujayo820nj9gJd3aphANf"
     private let apiURL = "https://api.mistral.ai/v1/chat/completions"
 
     func fetchChatCompletion(for messages: [[String: String]], completion: @escaping (Result<ChatCompletionResponse, Error>) -> Void) {
@@ -9,6 +9,7 @@ class NetworkManager {
             completion(.failure(NetworkError.invalidURL))
             return
         }
+        print("**************")
 
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -25,6 +26,7 @@ class NetworkManager {
             safe_prompt: false,
             random_seed: 1337
         )
+        print("**************")
 
         request.httpBody = try? JSONEncoder().encode(body)
 
@@ -46,6 +48,7 @@ class NetworkManager {
                 completion(.failure(error))
             }
         }
+        print("**************")
 
         task.resume()
     }

@@ -31,8 +31,8 @@ struct HomeView: View {
                 dreamInputView
                 Spacer()
                 responseView
-                Spacer()
-                footerView
+                //Spacer()
+                //footerView
             }
         }
     }
